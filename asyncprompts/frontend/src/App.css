@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* ============================================================
+   LANDING
+   ============================================================ */
+
+.landing {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #eef4ff,
+            #f7f8fc 55%,
+            #ffffff
+        );
+}
+
+
+.hero {
+    width: 650px;
+    text-align: center;
+}
+
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: #111827;
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    color: #667085;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.start-box {
+    margin-top: 40px;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(16, 24, 40, 0.08);
+}
+
+
+.start-box label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+
+.start-box input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+
+.start-box button,
+.ask-button {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 20px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.start-box button:hover,
+.ask-button:hover {
+    background: #273142;
+}
+
+
+/* ============================================================
+   APP
+   ============================================================ */
+
+.app {
+    min-height: 100vh;
+}
+
+
+header {
+    padding: 25px 40px;
+
+    background: white;
+
+    border-bottom: 1px solid #eaecf0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+header h1 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+
+header p {
+    margin: 5px 0 0;
+
+    color: #667085;
+}
+
+
+header button {
+    padding: 10px 16px;
+
+    border: 1px solid #d0d5dd;
+
+    background: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   INPUT QUESTIONS
+   ============================================================ */
+
+.question-input {
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #eaecf0;
+}
+
+
+.input-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.input-row span {
+    width: 35px;
+
+    font-weight: 600;
+}
+
+
+.input-row input {
+    flex: 1;
+
+    padding: 14px;
+
+    border:
+        1px solid #d0d5dd;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+
+.ask-button {
+    margin-top: 20px;
+}
+
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.cards {
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(450px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+.question-card {
+    background: white;
+
+    border: 1px solid #eaecf0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px
+        rgba(16, 24, 40, 0.05);
+}
+
+
+.card-section {
+    padding: 20px;
+
+    border-bottom:
+        1px solid #eaecf0;
+}
+
+
+.card-section:last-child {
+    border-bottom: none;
+}
+
+
+.section-title {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+
+    font-weight: 700;
+
+    color: #667085;
+
+    margin-bottom: 10px;
+}
+
+
+.question-text {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   TOOLS
+   ============================================================ */
+
+.tools {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.tool {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 7px 10px;
+
+    background: #f2f4f7;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.waiting {
+    color: #98a2b3;
+}
+
+
+/* ============================================================
+   ANSWER
+   ============================================================ */
+
+.answer-section {
+    min-height: 300px;
+}
+
+
+.answer {
+    white-space: pre-wrap;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    color: #344054;
+}
+
+
+.cursor {
+    animation:
+        blink 0.8s infinite;
+}
+
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ============================================================
+   STATUS
+   ============================================================ */
+
+.status {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.status.waiting {
+    color: #98a2b3;
+}
+
+
+.status.streaming {
+    color: #1570ef;
+}
+
+
+.status.completed {
+    color: #12b76a;
+}
+
+
+.status.error {
+    color: #f04438;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .hero {
+        width: auto;
+
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .cards {
+        padding: 15px;
+
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+}
